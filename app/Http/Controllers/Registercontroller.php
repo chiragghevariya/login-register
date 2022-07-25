@@ -20,7 +20,7 @@ class Registercontroller extends Controller
 	     $obj->last_name = $request->lastname;
 	     $obj->user_name = $request->username;
 	     $obj->email = $request->email;
-	     $obj->password = $request->password;
+	     $obj->password = \Hash::make($request->password);
 	     $obj->date_of_birth = $request->date;
 	          /**database field name/form name**/  
 	     

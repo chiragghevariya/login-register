@@ -66,7 +66,7 @@ h1 {
 
 <div class="container nm">
 
-  <form action="" method="POST" id="Register">
+  <form action="{{route('login-post')}}" method="POST" id="Register">
 
 @csrf
     
