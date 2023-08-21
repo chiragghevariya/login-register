@@ -22,4 +22,5 @@ Route::get('admin/register','\App\Http\Controllers\Registercontroller@create')->
 Route::post('admin/save-register','\App\Http\Controllers\Registercontroller@savecreate')->name('save-register-form');
 
 Route::get('admin/login','\App\Http\Controllers\Logincontroller@create')->name('login-form');
+ 
 Route::any('postlogin','\App\Http\Controllers\Logincontroller@postlogin')->name('login-post');
